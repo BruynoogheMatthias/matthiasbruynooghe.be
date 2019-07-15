@@ -1,0 +1,30 @@
+uuid: ec6cc562-1ab7-4e03-99e8-1702380c815d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.media.field_paragra
+    - node.type.media
+  module:
+    - entity_reference_revisions
+    - user
+id: node.media.default
+targetEntityType: node
+bundle: media
+mode: default
+content:
+  field_paragra:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

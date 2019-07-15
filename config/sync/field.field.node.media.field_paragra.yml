@@ -1,0 +1,23 @@
+uuid: 9999ebb5-34ac-46c4-9764-7b6e8e8d7c04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragra
+    - node.type.media
+  module:
+    - entity_reference_revisions
+id: node.media.field_paragra
+field_name: field_paragra
+entity_type: node
+bundle: media
+label: paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings: {  }
+field_type: entity_reference_revisions
