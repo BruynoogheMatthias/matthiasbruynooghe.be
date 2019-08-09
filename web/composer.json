@@ -9,7 +9,8 @@
         "drupal/adminimal_theme": "^1.5",
         "drupal/adminimal_admin_toolbar": "^1.9",
         "drupal/paragraphs_ee": "^1.4",
-        "phpro/grumphp": "^0.15.2"
+        "phpro/grumphp": "^0.15.2",
+        "drupal/console": "^1.9"
     },
     "replace": {
         "drupal/core": "^8.7"
@@ -21,6 +22,18 @@
         "autoloader-suffix": "Drupal8"
     },
     "extra": {
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "installer-paths": {
+            "core": ["type:drupal-core"],
+            "libraries/{$name}": ["type:drupal-library"],
+            "modules/contrib/{$name}": ["type:drupal-module"],
+            "profiles/contrib/{$name}": ["type:drupal-profile"],
+            "themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/Commands/{$name}": ["type:drupal-drush"]
+        },
         "_readme": [
             "By default Drupal loads the autoloader from ./vendor/autoload.php.",
             "To change the autoloader you can edit ./autoload.php.",
@@ -35,15 +48,6 @@
             "recurse": true,
             "replace": false,
             "merge-extra": false
-        },
-        "installer-paths": {
-            "core": ["type:drupal-core"],
-            "modules/contrib/{$name}": ["type:drupal-module"],
-            "profiles/contrib/{$name}": ["type:drupal-profile"],
-            "themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"],
-            "modules/custom/{$name}": ["type:drupal-custom-module"],
-            "themes/custom/{$name}": ["type:drupal-custom-theme"]
         }
     },
     "autoload": {
