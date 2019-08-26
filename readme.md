@@ -2,6 +2,7 @@
 
 #### subdomains
 - [drupal](drupal.matthiasbruynooghe.be)
+    - to login go to drupal.matthiasbruynooghe.be/user
 - [wordpress](wordpress.matthiasbruynooghe.be)
 
 #### deployment
