@@ -774,17 +774,8 @@ $settings['entity_update_backup'] = TRUE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
-$databases['default']['default'] = array (
-  'database' => 'drupal',
-  'username' => 'drupal',
-  'password' => 'drupal',
-  'prefix' => '',
-  'host' => 'mariadb:3306',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
+ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+ include $app_root . '/' . $site_path . '/settings.local.php';
+ }
+
 $config_directories['sync'] = 'sites/default/files/config_3TCjV_McapKSwDehTR735lif2UeSQvOZNgYzbz-mN7BQWMESu0uWkPuE0N9uMAcks1vTCuoAdA/sync';

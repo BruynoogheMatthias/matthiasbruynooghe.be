@@ -12,4 +12,5 @@ web/sites/default/files/
 web/themes/contrib/
 
 web/vendor/
+*\.local\.php
 
