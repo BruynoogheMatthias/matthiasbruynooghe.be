@@ -1,0 +1,9 @@
+uuid: ddcbb626-2919-4306-b50b-0feafec5b697
+langcode: en
+status: true
+dependencies: {  }
+id: media
+label: media
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

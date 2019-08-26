@@ -1,11 +1,15 @@
 
-\.idea/
-\web/core
+.vscode/
 
-web/modules/contrib/
+.idea/
 
-web/sites/default/files/
+**\web/core
 
-web/themes/contrib/
+**/web/modules/contrib/
 
-web/vendor/
+**/web/sites/default/files/
+
+**/web/themes/contrib/
+
+**/web/vendor/
+
